@@ -1,0 +1,129 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Google Drive Direct-Link Generator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+        <a class="navbar-brand" href="#">Google Drive Direct Link Generator</a>
+    </nav>
+    <!-- Page Content -->
+    <div class="container mt-3">
+        <div class="row border">
+            <div class="col-md-12 text-center">
+                <h2>Google Drive Direct Link Generator</h2>
+            </div>
+            <div class="col-md-12">
+                <h3>Instrucciones de uso:</h3>
+                <ul>
+                    <li>
+                        Introduce el enlace para compartir de Google Drive en el primer cajón:
+                        <ul>
+                            <li>
+                                Ejemplo de enlace válido:
+                                <span style="color:green;">https://drive.google.com/open?id=....</span>
+                            </li>
+                            <li>Ejemplo de enlace NO válido:
+                                <span style="color:red;">https://docs.google.com/.....</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Una vez hayas introducido el su correspondiente hueco,pulsa "Generar enlace"
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4 border">
+            <div class="col-md-12 mt-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Google Drive Share URL</span>
+                    </div>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1" name="sharingurl" id="sharingurl">
+                </div>
+            </div>
+            <div class="col-md-12 mt-3 mb-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon2">Google Drive Direct Link</span>
+                    </div>
+                    <input type="text" class="form-control" aria-describedby="basic-addon2" name="googlelink" id="googlelink">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 border">
+            <div class="col-md-12 mt-2">
+                <button id="generar" class="btn btn-lg btn-block btn-success">
+                    Generar enlace
+                </button>
+                <button id="borrar" class="btn btn-lg btn-block btn-danger mb-4">
+                    Borrar datos
+                </button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Error!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="errormsg"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger mt-2" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->    
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-71718057-4', 'auto');
+        ga('send', 'pageview')
+
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
